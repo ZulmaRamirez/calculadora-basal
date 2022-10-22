@@ -1,0 +1,69 @@
+/*h1{
+    color: blue;
+
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body{
+    background-color: rgb(252, 245, 245); /* cambia fondo */
+    font-family: 'Montserrat', sans-serif ;
+}
+
+#contenedor{
+   /*background-color: aqua;*/
+    width: 700px; 
+    height: 300px;
+    position: absolute;
+    inset: 0;
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+
+}
+#calculadora{
+background-color: white;
+width: 50%;
+height: 100%;
+float: left;
+}
+#detalle{
+background-color: #ff416c;
+color: white;
+width: 50%;
+height: 100%;
+float: left;
+}
+ .contenido{
+    /*background-color: aqua;*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden; /* sobrepasa, desbordamiento */
+ }
+ input{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background-color: #eee;
+    border: none;
+ }
+ button{
+    font-size: 15px; /* cambia TAMAÑO*/
+	font-weight: bold; /*Cambia ancho o negrita*/
+	padding: 12px 45px;  /* centra el texto del input, permitiendole dar espacios de costado y arriba */ 
+	border-radius: 30px;/* sea redondeado*/
+	background-color: #FF416C; /*color fondo */
+	border: 1px solid #FF416C; /* le da el  */ 
+	color: #FFFFFF; /* color de texto normal */ 
+	text-transform: uppercase; /* cambia estilo, en mayuscula , transforma todo en mayuscula*/
+	letter-spacing: 1px;  /*espacio entre lectras*/
+	transition: transform 20ms ease-in; /* permite el tiempo de transicion del efecto del boton*/
+ }
+
+ button:active {
+	transform: scale(0.95);  /*realiza el efecto del boton*/
+}
