@@ -1,4 +1,4 @@
-/*h1{
+ /*h1{
     color: blue;
 
 }
@@ -11,8 +11,8 @@ body{
 
 #contenedor{
    /*background-color: aqua;*/
-    width: 700px; 
-    height: 300px;
+    width: 900px; 
+    height: 340px;
     position: absolute;
     inset: 0;
     margin:auto;
@@ -24,14 +24,15 @@ body{
 
 }
 #calculadora{
-background-color: white;
+background-color: grey;
+color: rgb(25, 43, 30);
 width: 50%;
 height: 100%;
 float: left;
 }
 #detalle{
-background-color: #ff416c;
-color: white;
+background-color: rgb(13, 105, 36);
+color: rgb(231, 173, 24);
 width: 50%;
 height: 100%;
 float: left;
@@ -47,7 +48,7 @@ float: left;
     display: block;
     margin: auto;
     margin-bottom: 20px;
-    padding: 12px 15px;
+    padding: 9px 12px;
     background-color: #eee;
     border: none;
  }
@@ -56,9 +57,9 @@ float: left;
 	font-weight: bold; /*Cambia ancho o negrita*/
 	padding: 12px 45px;  /* centra el texto del input, permitiendole dar espacios de costado y arriba */ 
 	border-radius: 30px;/* sea redondeado*/
-	background-color: #FF416C; /*color fondo */
-	border: 1px solid #FF416C; /* le da el  */ 
-	color: #FFFFFF; /* color de texto normal */ 
+	background-color: green; /*color fondo */
+	border: 1px solid green; /* le da el  */ 
+	color:rgb(174, 211, 73); /* color de texto normal */ 
 	text-transform: uppercase; /* cambia estilo, en mayuscula , transforma todo en mayuscula*/
 	letter-spacing: 1px;  /*espacio entre lectras*/
 	transition: transform 20ms ease-in; /* permite el tiempo de transicion del efecto del boton*/
@@ -66,4 +67,17 @@ float: left;
 
  button:active {
 	transform: scale(0.95);  /*realiza el efecto del boton*/
+}
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
 }
