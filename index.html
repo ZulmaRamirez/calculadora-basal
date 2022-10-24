@@ -2,27 +2,31 @@
 <html>
     <heard>
             <link rel="stylesheet" href="./style.css">
+            <script src="./script.js" defer></script>
     </heard>
     <body>
         <div id="contenedor" >
             <div id="calculadora">
                 <div class="contenido">
-                    <h1 style="color: black">Hidratación Basal</h1>
-                    <p>Ingrese el peso en kg</p>
-                    <input type="number" placeholder="Peso en kg">
-                    <button>Calcular</button>
-                    <p>  1600 cc </p>
+                    <h1 style="color: rgb(174, 211, 73); ">Hidratación Basal</h1>
+                    <p class="item">Completa todos los datos</p>
+                    <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
                  </div>
             </div>
             <div id="detalle">
                 <div class="contenido">
-                    <h1 style="color: white">¿Como se calcula?</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2374/2374370.png" width="100px" height="70px"/>
+                    <h1 style="color: yellow">¿Como se calcula?</h1>
                     <ul>
                         <li> Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</li>
                         <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.  </li>
                         <li> Finalmente, por cada kilo arriba de 20kg se suman 20cc.</li>
                     </ul>
-                </div>
+                </div> 
             </div> 
         </div>
     </body>
